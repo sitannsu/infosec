@@ -1,0 +1,82 @@
+.circle-bg {
+  @apply absolute w-full h-24 rounded-full shadow-lg;
+}
+
+.top-circle {
+  top: -12px;
+  transform: translateY(-50%);
+}
+
+.bottom-circle {
+  bottom: -12px;
+  transform: translateY(50%);
+}
+
+
+
+.tsama-flex.flextop {
+box-shadow: inset 0px 20px 0px #9a1000;
+}
+.even-card {
+background-color: #f3f4f6; 
+/* border: 2px solid #c53030;  */
+}
+
+.odd-card {
+background-color: #fff;
+/* border: 2px solid #2b6cb0;  */
+}
+.flextop {
+border-top: 5px solid #0a0a0a;
+border-top-left-radius: 100px;
+border-top-right-radius: 100px;
+position: relative;
+}
+.tsama-flex {
+width: 100%;
+display: flex;
+flex-direction: column;
+padding: 15px;
+width: 250px;
+
+justify-content: center;
+}
+
+.stepNumber{
+width: 100%;
+text-align: center;
+border: 1px solid #0298a5;
+border-radius: 50px 0px 50px 0px;
+background: #0298a5;
+color: white;
+
+} 
+.flextop::before {
+content: '';
+width: 1px;
+height: 140px;
+background: #ae1301;
+position: absolute;
+left: 0;
+bottom: 7em;
+}
+
+.flextop::after {
+content: '';
+width: 1px;
+height: 140px;
+background: #ae1301;
+position: absolute;
+right: 0;
+bottom: 7em;
+}
+
+.odd-card { 
+box-shadow: inset 0px -20px 0px #a10000 !important;
+border-bottom: 6px solid #0a0a0a;
+border-bottom-left-radius: 100px;
+border-bottom-right-radius: 100px;
+border-top: none !important;
+border-top-left-radius: none !important;
+border-top-right-radius: none !important;
+}
